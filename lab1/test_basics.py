@@ -1,0 +1,42 @@
+import sys
+import os
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
+from grader_contracts.python_basics import TextInput, PositiveIntegerInput , VectorPairInput
+from python_basics import count_vowels, has_unique_characters, count_one_bits , multiplicative_persistence , mse ,  prime_factorization , pyramid , is_balanced_number
+ 
+print(count_vowels(TextInput(value="hello")))
+print(count_vowels(TextInput(value="AEIOU")))
+print(count_vowels(TextInput(value="python")))
+print(count_vowels(TextInput(value="bcdfg")))
+print(has_unique_characters(TextInput(value="abc")))
+print(has_unique_characters(TextInput(value="hello")))
+print(has_unique_characters(TextInput(value="12345")))
+print(has_unique_characters(TextInput(value="1123")))
+print(has_unique_characters(TextInput(value="")))
+print(count_one_bits(PositiveIntegerInput(value=1)))
+print(count_one_bits(PositiveIntegerInput(value=2)))
+print(count_one_bits(PositiveIntegerInput(value=3)))
+print(count_one_bits(PositiveIntegerInput(value=13)))
+print(count_one_bits(PositiveIntegerInput(value=15)))
+print(multiplicative_persistence(PositiveIntegerInput(value=39)))
+print(multiplicative_persistence(PositiveIntegerInput(value=4)))
+print(multiplicative_persistence(PositiveIntegerInput(value=999)))
+print(multiplicative_persistence(PositiveIntegerInput(value=15)))
+print(mse(VectorPairInput(predicted=[1, 2, 3], expected=[1, 4, 5])))
+print(mse(VectorPairInput(predicted=[1, 1, 1], expected=[1, 1, 1])))
+print(mse(VectorPairInput(predicted=[0, 0], expected=[3, 4])))
+print(prime_factorization(PositiveIntegerInput(value=86240)))
+print(prime_factorization(PositiveIntegerInput(value=60)))
+print(prime_factorization(PositiveIntegerInput(value=13)))
+print(prime_factorization(PositiveIntegerInput(value=8)))
+print(pyramid(PositiveIntegerInput(value=1)))
+print(pyramid(PositiveIntegerInput(value=5)))
+print(pyramid(PositiveIntegerInput(value=14)))
+print(pyramid(PositiveIntegerInput(value=30)))
+print(pyramid(PositiveIntegerInput(value=10)))
+print(is_balanced_number(PositiveIntegerInput(value=1234006)))
+print(is_balanced_number(PositiveIntegerInput(value=123456)))
+print(is_balanced_number(PositiveIntegerInput(value=121)))
+print(is_balanced_number(PositiveIntegerInput(value=1221)))
